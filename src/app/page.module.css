@@ -1,0 +1,56 @@
+/* styles/Home.module.css */
+
+.container {
+    min-height: 100vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #ececec;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logoContainer {
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .w3m-button{
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .w3m-button:hover {
+    background-color: #e6d700;
+  }

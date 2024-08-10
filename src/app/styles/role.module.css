@@ -1,0 +1,43 @@
+/* app/role-selection/roleSelection.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .roles {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .roleCard {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .roleCard:hover {
+    background-color: #444;
+    transform: translateY(-10px);
+  }
+  
+  .selected {
+    background-color: #6200ea;
+    transform: scale(1.05);
+    color: white;
+  }
+  
