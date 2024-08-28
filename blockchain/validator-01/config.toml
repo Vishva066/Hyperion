@@ -1,0 +1,23 @@
+data-path="/validator-01/data"
+genesis-file="/validator-01/genesis.json"
+pruning-enabled=true  
+
+nat-method="DOCKER"
+host-whitelist=["*"]
+
+# No Cost Tx
+min-gas-price=0
+
+# P2P
+p2p-host="127.0.0.1"
+p2p-port=30313
+
+# RPC
+rpc-http-enabled=true
+rpc-http-host="127.0.0.1"
+rpc-http-port=9547
+rpc-http-api=["ADMIN", "CLIQUE", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
+rpc-http-cors-origins=["*"]
+
+# Connections
+rpc-http-max-active-connections=999999999

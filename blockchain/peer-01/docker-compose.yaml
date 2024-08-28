@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  peer:
+    image: hyperledger/besu:24.2.0
+    container_name: peer-01
+    restart: unless-stopped
+    volumes:
+      - .:/peer-01/
+      - ./data:/peer-01/data
+    command: --config-file=/peer-01/config.toml
+    user: "0"

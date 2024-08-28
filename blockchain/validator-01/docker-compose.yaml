@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  validator:
+    image: hyperledger/besu:24.2.0
+    container_name: validator-01
+    restart: unless-stopped
+    volumes:
+      - .:/validator-01/:rw
+      - ./data:/validator-01/data:rw
+    command: --config-file=/validator-01/config.toml
+    user: "0"

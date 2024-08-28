@@ -1,9 +1,24 @@
 // app/page.js
+'use client'
+
+import { useWeb3ModalAccount } from '@web3modal/ethers/react'
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Logo from '../../public/logo.png'
 import styles from './page.module.css';
 
 export default function Home() {
+
+const {isConnected} = useWeb3ModalAccount();
+
+const router = useRouter();
+
+useEffect(() => {
+  if (isConnected) {
+    router.push('/role');
+  }
+}, [isConnected, router]);
 
   return (
     <div className={styles.container}>

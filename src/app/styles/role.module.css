@@ -1,43 +1,52 @@
-/* app/role-selection/roleSelection.module.css */
+/* app/styles/role.module.css */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #121212;
-    color: white;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-  
-  .roles {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .roleCard {
-    width: 200px;
-    padding: 20px;
-    text-align: center;
-    background-color: #333;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .roleCard:hover {
-    background-color: #444;
-    transform: translateY(-10px);
-  }
-  
-  .selected {
-    background-color: #6200ea;
-    transform: scale(1.05);
-    color: white;
-  }
-  
+  text-align: center;
+  padding: 2rem;
+}
+
+.roles {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.roleCard {
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.roleCard:hover {
+  transform: scale(1.1);
+}
+
+.selected {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.optionsContainer {
+  margin-top: 2rem;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.optionButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.optionButton:hover {
+  background-color: #005bb5;
+}

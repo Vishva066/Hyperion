@@ -1,0 +1,89 @@
+/* app/styles/create.module.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #2a2a2a;
+    /* color: #ffffff; */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+    color: hsl(0, 100%, 1%);
+    background-color: hsl(67, 97%, 61%); /* Add a background color */
+    padding: 0.5rem; /* Optional: Add some padding for better spacing */
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #e52121;
+    color: hsl(0, 43%, 5%);
+    transition: border-color 0.2s ease;
+  }
+  
+  .input:focus {
+    border-color: #0070f3;
+    outline: none;
+  }
+  
+  .inputReadOnly {
+    background-color: #444;
+    border: none;
+  }
+  
+  .submitButton {
+    padding: 0.875rem;
+    font-size: 1.2rem;
+    background-color: #0070f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+  }
+  
+  .submitButton:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+  }
+  
+  .submitButton:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+  }
+  
+  .submitButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.3);
+  }
+  

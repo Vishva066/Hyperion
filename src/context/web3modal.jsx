@@ -8,7 +8,7 @@ const projectId = 'ffab5c721682f76479bc5c2a91c5ce2c'
 // 2. Set chains
 const sepolia = {
   chainId: 11155111,
-  name: 'Ethereum',
+  name: 'Ethereum Sepolia',
   currency: 'ETH',
   explorerUrl: 'https://sepolia.etherscan.io',
   rpcUrl: 'https://eth-sepolia.g.alchemy.com/v2/AcAGAoaWrtRowbSkSPTenjAmWECKfH-w'
